@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Attaches</h1>
+
+<div id="attaches">
+  <% @attaches.each do |attach| %>
+    <%= render attach %>
+    <p>
+      <%= link_to "Show this attach", attach %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New attach", new_attach_path %>
